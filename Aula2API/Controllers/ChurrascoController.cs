@@ -45,6 +45,16 @@ namespace Aula2API.Controllers
                 totalConvidados++;
             }
 
+            //LINQ
+            // totalConvidados = convidados.Count();
+            // totalCriancas = convidados.Count(c => c.Idade <= 10);
+            // totalHomens = convidados.Count(h => h.Idade > 10 && h.Sexo == "Masculino");
+            // totalMulheres = convidados.Count(m => m.Idade > 10 && m.Sexo == "Feminino");
+            // var QtdeCarnePorHome = 0.200m; (n sei)
+            // totalCarne = (totalCriancas * 0.200m) + (totalHomens* 0.400m) + (totalMulheres * 0.300m);
+            // toalBebida = (totalCriancas * 0.600m) + (totalHomens * 1.200m) + (totalMulheres * 1.000m);
+
+
             var resultado = new ChurrascoResultadoDTO
             {
                 TotalConvidados = totalConvidados,
